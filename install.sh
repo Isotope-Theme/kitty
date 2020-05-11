@@ -3,4 +3,5 @@
 if [[ ! -d "$HOME/.config/kitty/" ]]; then
   mkdir -p "$HOME/.config/kitty/"
 fi
-curl -s https://wiki.archlinux.org/index.php/X_resources >> $HOME/.config/kitty/kitty.conf
+echo "Installing Isotope theme to $HOME/.config/kitty/kitty.conf"
+curl -s https://raw.githubusercontent.com/Isotope-Theme/kitty/master/isotope.conf >> $HOME/.config/kitty/kitty.conf
